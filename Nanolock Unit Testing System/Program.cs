@@ -11,7 +11,9 @@ namespace Nanolock_Unit_Testing_System
     {
         static void Main(string[] args)
         {
-            JsonReader reader = new JsonReader("TSL.json");
+            //looking for file in bin/Debug
+            //maybe we should change to read from Tests folder in project
+            JsonReader reader = new JsonReader("Tests/TSL.json");
             Variables testVars = reader.getVariables();
             Console.WriteLine(testVars);
         }

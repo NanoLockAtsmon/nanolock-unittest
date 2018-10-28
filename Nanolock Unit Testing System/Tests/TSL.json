@@ -1,0 +1,40 @@
+{
+    "Categories":[
+        "Regression",
+        "Select",
+        "Entity1"
+    ],
+    "Variables":[
+        {
+            "name":"a",
+            "value":5
+        },
+        {
+            "name": "b",
+            "value": "afasad"
+        },
+        {
+            "expected":{
+                "body":{}
+            }
+        }
+    ],
+    "Flow":[
+        {
+            "HTTP":{
+                "RequestURL":"www.nl.com/Device/GetDeviceType",
+                "Query":"SQL"
+            }
+        },
+        {
+            "Validate":"expected"
+        },
+        {
+            "IF":{
+                "":"",
+                "true":"",
+                "false":""
+            }
+        }
+    ]
+}

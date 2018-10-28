@@ -1,0 +1,4669 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NanoLockSec.Core.Entities</name>
+    </assembly>
+    <members>
+        <member name="T:NanoLockSec.Core.Entities.ActivityStateCode">
+            <summary>
+            The enumeartion defines flags for activity states.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.ActivityStateCode.Undefined">
+            <summary>
+            The activity state is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.ActivityStateCode.Active">
+            <summary>
+            The activity state is active.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.ActivityStateCode.Idle">
+            <summary>
+            The activity state is idle.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.ActivityStateCode.All">
+            <summary>
+            All of the activity states.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.Alert">
+            <summary>
+            This class represents an alert that was logged.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.EventTypeId">
+            <summary>
+            Gets or sets the event type identifier.
+            </summary>
+            <value>
+            The event type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.AlertType">
+            <summary>
+            Gets or sets the type of the alert.
+            </summary>
+            <value>
+            The type of the alert.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.ChipId">
+            <summary>
+            Gets or sets the chip serial.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.DeviceId">
+            <summary>
+            Gets or sets the device identifier.
+            </summary>
+            <value>
+            The device identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.Device">
+            <summary>
+            Gets or sets the device.
+            </summary>
+            <value>
+            The device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.OpenedTimestamp">
+            <summary>
+            Gets or sets the opened timestamp.
+            </summary>
+            <value>
+            The opened timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.ClosedTimestamp">
+            <summary>
+            Gets or sets the closed timestamp.
+            </summary>
+            <value>
+            The closed timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.StatusId">
+            <summary>
+            Gets or sets the status identifier.
+            </summary>
+            <value>
+            The status identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.AlertStatus">
+            <summary>
+            Gets or sets the alert status.
+            </summary>
+            <value>
+            The alert status.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.CategoryId">
+            <summary>
+            Gets or sets the category identifier.
+            </summary>
+            <value>
+            The category identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.Alert.AlertCategory">
+            <summary>
+            Gets or sets the alert category.
+            </summary>
+            <value>
+            The alert category.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.AlertCategory">
+            <summary>
+            This class represents an alert category entity.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.LookupBase`1" />
+            <seealso cref="T:NanoLockSec.Core.Entities.Alerts.AlertCategoryCode"/>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.AlertCategoryCode">
+            <summary>
+            This enumeration represents the category of an alert.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertCategoryCode.Undefined">
+            <summary>
+            The severity is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertCategoryCode.Attack">
+            <summary>
+            The alert is of an attack.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertCategoryCode.Risk">
+            <summary>
+            The alert is of a risk.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.AlertRule">
+            <summary>
+            This class represents a single rule in the data store.
+            </summary>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Alerts.AlertRule.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Alerts.AlertRule"/> class.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.Id">
+            <summary>
+            Gets or sets the rule identifier.
+            </summary>
+            <value>
+            The rule identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.ParentId">
+            <summary>
+            Gets or sets the parent identifier.
+            </summary>
+            <value>
+            The parent identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.Parent">
+            <summary>
+            Gets or sets the parent.
+            </summary>
+            <value>
+            The parent.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.MemberName">
+            <summary>
+            Gets or sets the name of the member.
+            </summary>
+            <value>
+            The name of the member.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.Operator">
+            <summary>
+            Gets or sets the operator.
+            </summary>
+            <value>
+            The operator.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.TargetValue">
+            <summary>
+            Gets or sets the target value.
+            </summary>
+            <value>
+            The target value.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.Rules">
+            <summary>
+            Gets or sets the rules.
+            </summary>
+            <value>
+            The rules.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.Inputs">
+            <summary>
+            Gets or sets the inputs.
+            </summary>
+            <value>
+            The inputs.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.RuleTypeId">
+            <summary>
+            Gets or sets the rule type identifier.
+            </summary>
+            <value>
+            The rule type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.NanoLockSec#Core#Entities#ITrackable#CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertRule.NanoLockSec#Core#Entities#ITrackable#UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.AlertRuleTypeCode">
+            <summary>
+            This enumeration represents the type of rule.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertRuleTypeCode.Undefined">
+            <summary>
+            The rule type is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertRuleTypeCode.OperationType">
+            <summary>
+            The rule is to decide operation type.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertRuleTypeCode.Severity">
+            <summary>
+            The rule is to decide severity.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.AlertStatus">
+            <summary>
+            This class represents an alert status entity.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.LookupBase`1" />
+            <seealso cref="T:NanoLockSec.Core.Entities.Alerts.AlertStatusCode"/>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.AlertStatusCode">
+            <summary>
+            This enumeration represents the status of an alert.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertStatusCode.Undefined">
+            <summary>
+            The status is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertStatusCode.Open">
+            <summary>
+            The alert is open.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertStatusCode.Closed">
+            <summary>
+            The alert is closed.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.AlertStatusCode.Snoozed">
+            <summary>
+            The alert is snoozed.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.AlertType">
+            <summary>
+            This class represents an alert type entity.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.LookupBase`1" />
+            <seealso cref="T:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode"/>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertType.CategoryId">
+            <summary>
+            Gets or sets the category identifier.
+            </summary>
+            <value>
+            The category identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.AlertType.Category">
+            <summary>
+            Gets or sets the category.
+            </summary>
+            <value>
+            The category.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.DeviceEventLog">
+            <summary>
+            This class represents a single alert that is recieved from a client.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.DeviceEventLog.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.DeviceEventLog.EventTypeId">
+            <summary>
+            Gets or sets the event type identifier.
+            </summary>
+            <value>
+            The event type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.DeviceEventLog.StatusId">
+            <summary>
+            Gets or sets the status identifier.
+            </summary>
+            <value>
+            The status identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.DeviceEventLog.ChipSerial">
+            <summary>
+            Gets or sets the chip serial.
+            </summary>
+            <value>
+            The chip serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.DeviceEventLog.DeviceSerial">
+            <summary>
+            Gets or sets the device serial.
+            </summary>
+            <value>
+            The device serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Alerts.DeviceEventLog.Timestamp">
+            <summary>
+            Gets or sets the timestamp.
+            </summary>
+            <value>
+            The timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.DeviceEventStatusCode">
+            <summary>
+            This enumeration represents the status of a reported event.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventStatusCode.Undefined">
+            <summary>
+            The status is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventStatusCode.Error">
+            <summary>
+            The status of the event is erroneous.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventStatusCode.Success">
+            <summary>
+            The status of the event is successful.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode">
+            <summary>
+            This enumeration defines the possible alert types.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode.Undefined">
+            <summary>
+            The type is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode.ClientAuthentication">
+            <summary>
+            The event concerns client authentication.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode.ServerAuthentication">
+            <summary>
+            The event concerns server authentication.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode.ImageVerifacation">
+            <summary>
+            The event concerns image verification.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode.DevicePosition">
+            <summary>
+            The event concerns the device's OTPM position.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode.Sequence">
+            <summary>
+            The event concerns the sequence.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode.Sync">
+            <summary>
+            The event concerns the device sync.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Alerts.DeviceEventTypeCode.Update">
+            <summary>
+            The event concerns the device update.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert">
+            <summary>
+            This class contains analytical data for alert.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.AlertId">
+            <summary>
+            Gets or sets the alert identifier.
+            </summary>
+            <value>
+            The alert identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.OpenedTimestamp">
+            <summary>
+            Gets or sets the opened timestamp.
+            </summary>
+            <value>
+            The opened timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.CloseTimestamp">
+            <summary>
+            Gets or sets the closed timestamp.
+            </summary>
+            <value>
+            The closed timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.AlertTypeId">
+            <summary>
+            Gets or sets the type of the alert.
+            </summary>
+            <value>
+            The type of the alert.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.AlertType">
+            <summary>
+            Gets or sets the type of the alert.
+            </summary>
+            <value>
+            The type of the alert.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.AlertCategoryId">
+            <summary>
+            Gets or sets the alert category.
+            </summary>
+            <value>
+            The alert category.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.AlertCategory">
+            <summary>
+            Gets or sets the alert category.
+            </summary>
+            <value>
+            The alert category.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.DeviceId">
+            <summary>
+            Gets or sets the device identifier.
+            </summary>
+            <value>
+            The device identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.Device">
+            <summary>
+            Gets or sets the device.
+            </summary>
+            <value>
+            The device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.LockStateId">
+            <summary>
+            Gets or sets the state of the lock.
+            </summary>
+            <value>
+            The state of the lock.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.LockState">
+            <summary>
+            Gets or sets the state of the lock.
+            </summary>
+            <value>
+            The state of the lock.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.UpdateStateLogId">
+            <summary>
+            Gets or sets the update state log identifier.
+            </summary>
+            <value>
+            The update state log identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.UpdateStateLog">
+            <summary>
+            Gets or sets the update state log.
+            </summary>
+            <value>
+            The update state log.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.ModelId">
+            <summary>
+            Gets or sets the model identifier.
+            </summary>
+            <value>
+            The model identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.ModelTypeId1">
+            <summary>
+            Gets or sets the first model type identifier.
+            </summary>
+            <value>
+            The first model type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.ModelType1">
+            <summary>
+            Gets or sets the first model type.
+            </summary>
+            <value>
+            The first model type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.ModelTypeId2">
+            <summary>
+            Gets or sets the second model type identifier.
+            </summary>
+            <value>
+            The second model type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.ModelType2">
+            <summary>
+            Gets or sets the second model type.
+            </summary>
+            <value>
+            The second model type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.ModelTypeId3">
+            <summary>
+            Gets or sets the third model type identifier.
+            </summary>
+            <value>
+            The third model type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.ModelType3">
+            <summary>
+            Gets or sets the third model type.
+            </summary>
+            <value>
+            The third model type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.LocationId">
+            <summary>
+            Gets or sets the location identifier.
+            </summary>
+            <value>
+            The location identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.Location">
+            <summary>
+            Gets or sets the location.
+            </summary>
+            <value>
+            The location.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.RegionId">
+            <summary>
+            Gets or sets the region identifier.
+            </summary>
+            <value>
+            The region identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.Region">
+            <summary>
+            Gets or sets the region.
+            </summary>
+            <value>
+            The region.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.CountryId">
+            <summary>
+            Gets or sets the country identifier.
+            </summary>
+            <value>
+            The country identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.Country">
+            <summary>
+            Gets or sets the country.
+            </summary>
+            <value>
+            The country.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.CountryRegionId">
+            <summary>
+            Gets or sets the country region identifier.
+            </summary>
+            <value>
+            The country region identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.CountryRegion">
+            <summary>
+            Gets or sets the country region.
+            </summary>
+            <value>
+            The country region.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.AlertStateId">
+            <summary>
+            Gets or sets the state of the alert.
+            </summary>
+            <value>
+            The state of the alert.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Data.AnalyticsAlert.AlertState">
+            <summary>
+            Gets or sets the state of the alert.
+            </summary>
+            <value>
+            The state of the alert.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Analytics.DateRangeCode">
+            <summary>
+            This enumeration defines a query date range.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Analytics.DateRangeCode.Custom">
+            <summary>
+            The range is a custom range.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Analytics.DateRangeCode.Today">
+            <summary>
+            The range is today.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Analytics.DateRangeCode.Yesterday">
+            <summary>
+            The range is yesterday.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Analytics.DateRangeCode.LastWeek">
+            <summary>
+            The range is the last week.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Analytics.DateRangeCode.LastMonth">
+            <summary>
+            The range is the last month.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Analytics.DateRangeCode.Last7Days">
+            <summary>
+            The range is the last 7 days.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Analytics.DateRangeCode.Last30Days">
+            <summary>
+            The range is the last 30 days.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Analytics.QueryConfiguration.AnalyticsBreadcrumb">
+            <summary>
+            This class contains data of a single breadcrum item.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.QueryConfiguration.AnalyticsBreadcrumb.DimensionLevelId">
+            <summary>
+            Gets or sets the dimension identifier.
+            </summary>
+            <value>
+            The dimension identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.QueryConfiguration.AnalyticsBreadcrumb.Values">
+            <summary>
+            Gets or sets the values.
+            </summary>
+            <remarks>
+            Each value is represented in a key value pair.
+            The key is the identifier and the value is for the display.
+            </remarks>
+            <value>
+            The values.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Analytics.QueryConfiguration.AnalyticsDataSetDefinition">
+            <summary>
+            This class defines a dataset in a timeline query.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.QueryConfiguration.AnalyticsDataSetDefinition.DimensionLevelId">
+            <summary>
+            Gets or sets the dimension identifier.
+            </summary>
+            <value>
+            The dimension identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.QueryConfiguration.AnalyticsDataSetDefinition.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension">
+            <summary>
+            This class represents a single analytics dimenstion record.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension.AggregationPath">
+            <summary>
+            Gets or sets the aggregation path.
+            </summary>
+            <value>
+            The aggregation path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension.DisplayPath">
+            <summary>
+            Gets or sets the display path.
+            </summary>
+            <value>
+            The display path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension.Entity">
+            <summary>
+            Gets or sets the entity.
+            </summary>
+            <value>
+            The entity.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension.EntityId">
+            <summary>
+            Gets or sets the entity identifier.
+            </summary>
+            <value>
+            The entity identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension.TicketType">
+            <summary>
+            Gets or sets the type of the ticket.
+            </summary>
+            <value>
+            The type of the ticket.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension.PathParts">
+            <summary>
+            Gets or sets the path parts.
+            </summary>
+            <value>
+            The path parts.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimension"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimensionPathPart">
+            <summary>
+            This class represents a part of a dimension path.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogEntityBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimensionPathPart.SortOrder">
+            <summary>
+            Gets or sets the sort order.
+            </summary>
+            <value>
+            The sort order.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimensionPathPart.Dimension">
+            <summary>
+            Gets or sets the dimension.
+            </summary>
+            <value>
+            The dimension.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimensionPathPart.DimensionId">
+            <summary>
+            Gets or sets the dimension identifier.
+            </summary>
+            <value>
+            The dimension identifier.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimensionPathPart.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsDimensionPathPart" /> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsEntity">
+            <summary>
+            This class represents a single analytics entity record.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsEntity.PropertyPath">
+            <summary>
+            Gets or sets the property path.
+            </summary>
+            <value>
+            The property path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsEntity.PropertyValue">
+            <summary>
+            Gets or sets the property value.
+            </summary>
+            <value>
+            The property value.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsEntity.TimeFields">
+            <summary>
+            Gets or sets the time fields.
+            </summary>
+            <value>
+            The time fields.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsEntity.ViewName">
+            <summary>
+            Gets or sets the name of the view.
+            </summary>
+            <value>
+            The name of the view.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsEntity.Dimensions">
+            <summary>
+            Gets or sets the dimensions.
+            </summary>
+            <value>
+            The dimensions.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsEntity.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Analytics.Entities.QueryConfiguration.AnalyticsEntity" /> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Analytics.ReportDefinition">
+            <summary>
+            This class contains the definition of a report.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.Id">
+            <summary>
+            Gets or sets the report identifier.
+            </summary>
+            <value>
+            The report identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.DateRange">
+            <summary>
+            Gets or sets the date range.
+            </summary>
+            <value>
+            The date range.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.FromTimestamp">
+            <summary>
+            Gets or sets from timestamp.
+            </summary>
+            <value>
+            From timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.ToTimestamp">
+            <summary>
+            Gets or sets to timestamp.
+            </summary>
+            <value>
+            To timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.EntityIds">
+            <summary>
+            Gets or sets the entity identifiers.
+            </summary>
+            <value>
+            The entity identifiers.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.Breadcrumbs">
+            <summary>
+            Gets or sets the breadcrumbs.
+            </summary>
+            <value>
+            The breadcrumbs.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.DimensionLevelId">
+            <summary>
+            Gets or sets the dimension identifier.
+            </summary>
+            <value>
+            The dimension identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.DataSets">
+            <summary>
+            Gets or sets the data sets.
+            </summary>
+            <value>
+            The data sets.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.CreateTimestamp">
+            <summary>
+            Gets or sets the create timestamp.
+            </summary>
+            <value>
+            The create timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Analytics.ReportDefinition.ColumnsSort">
+            <summary>
+            Gets or sets the columns sort state.
+            </summary>
+            <value>
+            The columns sort state.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.ChipType">
+            <summary>
+            Defines a chip type (i.e. ASIC)
+            A chip is contained inside a device (i.e. "Front Breaks ECU")
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1" />
+            <inheritdoc />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.ChipType.DeviceTypeChipTypes">
+            <summary>
+            Gets the device type chip types.
+            </summary>
+            <value>
+            The device type chip types.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.ChipType.DeviceTypes">
+            <summary>
+            The device types that contains this chip type
+            </summary>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Catalog.ChipType.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Catalog.ChipType"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.DeviceType">
+            <summary>
+            Defines a device type (i.e. "Front Breaks ECU") inside a model (i.e. "Ford Mondeo 2012")
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1" />
+            <inheritdoc />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.DeviceType.ChipTypes">
+            <summary>
+            The chip types that contained in this device type
+            </summary>        
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.DeviceType.ModelTypes">
+            <summary>
+            The model types that contains this device type
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.DeviceType.ModelTypeDeviceTypes">
+            <summary>
+            Gets the model type device types.
+            </summary>
+            <value>
+            The model type device types.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.DeviceType.DeviceTypeChipTypes">
+            <summary>
+            Gets the device type chip types.
+            </summary>
+            <value>
+            The device type chip types.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Catalog.DeviceType.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Catalog.DeviceType"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogEntityBase">
+            <inheritdoc />
+            <summary>
+            Base class for all catalog  entities in the system
+            </summary>    
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Generic.CatalogEntityBase.Name">
+            <summary>
+            The name of the entity
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Generic.CatalogEntityBase.SpecificType">
+            <summary>
+            The specific type name of the entity
+            </summary>        
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Generic.CatalogEntityBase.Data">
+            <summary>
+            Custom data that the entity can store
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1">
+            <inheritdoc />
+            <summary>
+            Represents a base class for all catalog hierarchical entities
+            </summary>    
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1.ParentId">
+            <summary>
+            Gets or sets the parent identifier.
+            </summary>
+            <value>
+            The parent identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1.Parent">
+            <summary>
+            The id of the entity's parent
+            </summary>        
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1.SubEntities">
+            <summary>
+            The entities which belong to this entity
+            </summary>        
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.Inventory.Chip">
+            <summary>
+            Defines a chip instance
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogEntityBase" />
+            <inheritdoc />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Chip.ChipSerial">
+            <summary>
+            The serial of this chip
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Chip.ChipTypeId">
+            <summary>
+            Gets or sets the chip type identifier.
+            </summary>
+            <value>
+            The chip type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Chip.ChipType">
+            <summary>
+            The type of this chip
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Chip.LockState">
+            <summary>
+            The lock state of the chip
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Chip.LastSync">
+            <summary>
+            The last sync time of the chip
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Chip.DeviceId">
+            <summary>
+            Gets or sets the device identifier.
+            </summary>
+            <value>
+            The device identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Chip.Device">
+            <summary>
+            Gets or sets the device.
+            </summary>
+            <value>
+            The device.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Catalog.Inventory.Chip.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Catalog.Inventory.Chip"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.Inventory.Device">
+            <summary>
+            Defines a device instance
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogEntityBase" />
+            <inheritdoc />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.DeviceSerial">
+            <summary>
+            Serial of this device
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.DeviceTypeId">
+            <summary>
+            Gets or sets the device type identifier.
+            </summary>
+            <value>
+            The device type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.DeviceType">
+            <summary>
+            The type of the device.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.Chips">
+            <summary>
+            The chips that contained in this device instance
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.RegistrationStatusId">
+            <summary>
+            Gets or sets the registration status.
+            </summary>
+            <value>
+            The registration status.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.ModelId">
+            <summary>
+            Gets or sets the model identifier.
+            </summary>
+            <value>
+            The model identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.CommunicationConfigurationId">
+            <summary>
+            Gets or sets the communication configuration identifier.
+            </summary>
+            <value>
+            The communication configuration identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Device.CommunicationConfiguration">
+            <summary>
+            Gets or sets the communication configuration.
+            </summary>
+            <value>
+            The communication configuration.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Catalog.Inventory.Device.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Catalog.Inventory.Device"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.Inventory.Model">
+            <summary>
+            Base class for all catalog  entities in the system
+            Defines a model instance
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogEntityBase" />
+            <inheritdoc />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Model.ModelSerial">
+            <summary>
+            Serial of this model
+            </summary>
+            <value>
+            The model serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Model.ModelTypeId">
+            <summary>
+            Gets or sets the model type identifier.
+            </summary>
+            <value>
+            The model type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Model.ModelType">
+            <summary>
+            The id of the model type
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Model.Devices">
+            <summary>
+            The devices which contained in this model
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Model.LocationId">
+            <summary>
+            Gets or sets the location identifier.
+            </summary>
+            <value>
+            The location identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Model.Location">
+            <summary>
+            The location in which the model instance is located
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Model.ModelLocationLogs">
+            <summary>
+            Gets or sets the model location logs.
+            </summary>
+            <value>
+            The model location logs.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Inventory.Model.ModelSerialLogs">
+            <summary>
+            Gets or sets the model serial logs.
+            </summary>
+            <value>
+            The model serial logs.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Catalog.Inventory.Model.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Catalog.Inventory.Model"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.Joins.DeviceTypeChipType">
+            <summary>
+            This class represents a join between <see cref="T:NanoLockSec.Core.Entities.Catalog.ChipType"/> and <see cref="T:NanoLockSec.Core.Entities.Catalog.DeviceType"/> entities.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.IJoinEntity`1" />
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.ChipType"/>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.DeviceType"/>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.DeviceTypeChipType.DeviceTypeId">
+            <summary>
+            Gets or sets the device type identifier.
+            </summary>
+            <value>
+            The device type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.DeviceTypeChipType.DeviceType">
+            <summary>
+            Gets or sets the type of the device.
+            </summary>
+            <value>
+            The type of the device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.DeviceTypeChipType.NanoLockSec#Core#Entities#Generic#IJoinEntity{NanoLockSec#Core#Entities#Catalog#DeviceType}#Navigation">
+            <summary>
+            Gets or sets the joined entity.
+            </summary>
+            <value>
+            The joined entity.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.DeviceTypeChipType.ChipTypeId">
+            <summary>
+            Gets or sets the chip type identifier.
+            </summary>
+            <value>
+            The chip type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.DeviceTypeChipType.ChipType">
+            <summary>
+            Gets or sets the type of the chip.
+            </summary>
+            <value>
+            The type of the chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.DeviceTypeChipType.NanoLockSec#Core#Entities#Generic#IJoinEntity{NanoLockSec#Core#Entities#Catalog#ChipType}#Navigation">
+            <summary>
+            Gets or sets the joined entity.
+            </summary>
+            <value>
+            The joined entity.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.Joins.ModelTypeDeviceType">
+            <summary>
+            This class represents a join between <see cref="T:NanoLockSec.Core.Entities.Catalog.ModelType"/> and <see cref="T:NanoLockSec.Core.Entities.Catalog.DeviceType"/> entities.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.IJoinEntity`1" />
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.ModelType"/>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.DeviceType"/>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.ModelTypeDeviceType.ModelTypeId">
+            <summary>
+            Gets or sets the model type identifier.
+            </summary>
+            <value>
+            The model type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.ModelTypeDeviceType.ModelType">
+            <summary>
+            Gets or sets the type of the model.
+            </summary>
+            <value>
+            The type of the model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.ModelTypeDeviceType.NanoLockSec#Core#Entities#Generic#IJoinEntity{NanoLockSec#Core#Entities#Catalog#ModelType}#Navigation">
+            <summary>
+            Gets or sets the joined entity.
+            </summary>
+            <value>
+            The joined entity.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.ModelTypeDeviceType.DeviceTypeId">
+            <summary>
+            Gets or sets the device type identifier.
+            </summary>
+            <value>
+            The device type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.ModelTypeDeviceType.DeviceType">
+            <summary>
+            Gets or sets the type of the device.
+            </summary>
+            <value>
+            The type of the device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Joins.ModelTypeDeviceType.NanoLockSec#Core#Entities#Generic#IJoinEntity{NanoLockSec#Core#Entities#Catalog#DeviceType}#Navigation">
+            <summary>
+            Gets or sets the joined entity.
+            </summary>
+            <value>
+            The joined entity.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.Location">
+            <summary>
+            Defines a geographic location
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1" />
+            <inheritdoc />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.Location.PropertyName">
+            <summary>
+            Gets or sets the name of the property.
+            </summary>
+            <value>
+            The name of the property.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.LocationTypes">
+            <summary>
+            This class contains the different types of locations.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.LocationTypes.City">
+            <summary>
+            The location type of a city.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.LocationTypes.Region">
+            <summary>
+            The location type of a region.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.LocationTypes.Country">
+            <summary>
+            The location type of a country.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.LocationTypes.CountryRegion">
+            <summary>
+            The location type of a region of a country.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.ModelType">
+            <summary>
+            Defines an entity that represents a "complete" model type (i.e. "Peugeot 5008", "HP Desjkjet 200" etc.).
+            One model contains one or more devices
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Catalog.Generic.CatalogHierarchicalEntityBase`1" />
+            <inheritdoc />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.ModelType.ModelTypeDeviceTypes">
+            <summary>
+            Gets the model type device types.
+            </summary>
+            <value>
+            The model type device types.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Catalog.ModelType.DeviceTypes">
+            <summary>
+            The device types that contained in this model type
+            </summary>        
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Catalog.ModelType.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Catalog.ModelType"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Catalog.TicketTypeCode">
+            <summary>
+            This enumeration defines the different types of tickets.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.TicketTypeCode.Undefined">
+            <summary>
+            The ticket is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.TicketTypeCode.Endpoint">
+            <summary>
+            The ticket is of an endpoint.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.TicketTypeCode.Device">
+            <summary>
+            The ticket is of a device.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.TicketTypeCode.Location">
+            <summary>
+            The ticket is of a location.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Catalog.TicketTypeCode.Update">
+            <summary>
+            The ticket is of an update.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.ChipStatistics">
+            <summary>
+            This class contains the the statistical data of a device.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.TrackableBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.Update">
+            <summary>
+            Gets or sets the update.
+            </summary>
+            <value>
+            The update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.LockStateId">
+            <summary>
+            Gets or sets the lock state identifier.
+            </summary>
+            <value>
+            The lock state identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.LockState">
+            <summary>
+            Gets or sets the state of the lock.
+            </summary>
+            <value>
+            The state of the lock.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.UpdateStateId">
+            <summary>
+            Gets or sets the update state identifier.
+            </summary>
+            <value>
+            The update state identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.UpdateState">
+            <summary>
+            Gets or sets the state of the update.
+            </summary>
+            <value>
+            The state of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.LastSyncTimestamp">
+            <summary>
+            Gets or sets the last synchronize timestamp.
+            </summary>
+            <value>
+            The last synchronize timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipStatistics.DeletionTimestamp">
+            <summary>
+            Gets or sets the deletion timestamp.
+            </summary>
+            <value>
+            The deletion timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.ChipTransaction">
+            <summary>
+            This class contains the data of a device transaction.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.TransactionTypeId">
+            <summary>
+            Gets or sets the transaction type identifier.
+            </summary>
+            <value>
+            The transaction type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.TransactionType">
+            <summary>
+            Gets or sets the type of the transaction.
+            </summary>
+            <value>
+            The type of the transaction.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.CreatedBy">
+            <summary>
+            Gets or sets the name of the user who created the transaction.
+            </summary>
+            <value>
+            The name of the user who created the transaction.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.UpdatedBy">
+            <summary>
+            Gets or sets the name of the user who updated the transaction.
+            </summary>
+            <value>
+            The name of the user who updated the transaction.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.ChipTransaction.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.ChipTransactionType">
+            <summary>
+            This class represents a record in the chip transaction type entity.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.LookupBase`1" />
+            <seealso cref="T:NanoLockSec.Core.Entities.Devices.ChipTransactionTypeCode"/>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.ChipTransactionTypeCode">
+            <summary>
+            This enumeration defines the type of the chip transaction.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.ChipTransactionTypeCode.Undefined">
+            <summary>
+            The transaction type is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.ChipTransactionTypeCode.Registered">
+            <summary>
+            The device was registered.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.ChipTransactionTypeCode.Deactivated">
+            <summary>
+            The device was deactivated.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.ChipTransactionTypeCode.Activated">
+            <summary>
+            The device was activated.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.DeviceCommunicationConfiguration">
+            <summary>
+            This class contains the configuration of the communication that a device requires.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceCommunicationConfiguration.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceCommunicationConfiguration.BlockSize">
+            <summary>
+            Gets or sets the size of the block.
+            </summary>
+            <value>
+            The size of the block.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceCommunicationConfiguration.ProtocolType">
+            <summary>
+            Gets or sets the type of the protocol.
+            </summary>
+            <value>
+            The type of the protocol.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceCommunicationConfiguration.KeySize">
+            <summary>
+            Gets or sets the size of the key.
+            </summary>
+            <value>
+            The size of the key.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceCommunicationConfiguration.TimeoutMilliseconds">
+            <summary>
+            Gets or sets the timeout in milliseconds.
+            </summary>
+            <value>
+            The timeout in milliseconds.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceCommunicationConfiguration.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceCommunicationConfiguration.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.DeviceFirmwareVersionLog">
+            <summary>
+            This class contains the firmware of a device at a certain time.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceFirmwareVersionLog.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceFirmwareVersionLog.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceFirmwareVersionLog.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceFirmwareVersionLog.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceFirmwareVersionLog.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceFirmwareVersionLog.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.DeviceMemoryStateLog">
+            <summary>
+            This class contains the data of a device memory state at a certain time.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceMemoryStateLog.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceMemoryStateLog.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceMemoryStateLog.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceMemoryStateLog.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceMemoryStateLog.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceMemoryStateLog.LockStateId">
+            <summary>
+            Gets or sets the lock state of the device memory.
+            </summary>
+            <value>
+            The lock state of the device memory.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceMemoryStateLog.LockState">
+            <summary>
+            Gets or sets the state of the lock.
+            </summary>
+            <value>
+            The state of the lock.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.DeviceOneTimeKeyPad">
+            <summary>
+            This class contains a device one time key pad data.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceOneTimeKeyPad.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceOneTimeKeyPad.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceOneTimeKeyPad.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceOneTimeKeyPad.OneTimeKeyPad">
+            <summary>
+            Gets or sets the one time key pad.
+            </summary>
+            <value>
+            The one time key pad.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceOneTimeKeyPad.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceOneTimeKeyPad.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.DeviceRegistrationStatusCode">
+            <summary>
+            This enumeration represents the current status of a device registration process.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.DeviceRegistrationStatusCode.Unknown">
+            <summary>
+            The status is unknown.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.DeviceRegistrationStatusCode.InProcess">
+            <summary>
+            The registration is in process.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.DeviceRegistrationStatusCode.Done">
+            <summary>
+            The registration process has finished.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.DeviceSyncLog">
+            <summary>
+            This class contains the data of a device sync.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceSyncLog.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceSyncLog.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceSyncLog.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceSyncLog.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceSyncLog.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog">
+            <summary>
+            This class contains the state of an update of a device at a specific time.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.Update">
+            <summary>
+            Gets or sets the update.
+            </summary>
+            <value>
+            The update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.FlowId">
+            <summary>
+            Gets or sets the flow identifier.
+            </summary>
+            <value>
+            The flow identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.UpdateStateId">
+            <summary>
+            Gets or sets the state of the update.
+            </summary>
+            <value>
+            The state of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.UpdateState">
+            <summary>
+            Gets or sets the state of the update.
+            </summary>
+            <value>
+            The state of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.DeviceUpdateStateLog.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.LockState">
+            <summary>
+            This class represents a lock state entity.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.LookupBase`1" />
+            <seealso cref="T:NanoLockSec.Core.Entities.Devices.LockStateCode"/>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.LockStateCode">
+            <summary>
+            This enumeration contains the possible states of the device memory.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.LockStateCode.Unknown">
+            <summary>
+            The device memory state is unknown.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.LockStateCode.Locked">
+            <summary>
+            The device memory is locked.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.LockStateCode.Unlocked">
+            <summary>
+            The device memory is unlocked.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceLockMessage">
+            <summary>
+            This class contains the data of a lock process that a device needs to execute.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase" />
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Devices.Messages.DeviceLockMessage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceLockMessage" /> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase">
+            <summary>
+            This class contains the data of a device message.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.OperationType">
+            <summary>
+            Gets or sets the type of the operation.
+            </summary>
+            <value>
+            The type of the operation.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.PublisherType">
+            <summary>
+            Gets or sets the type of the publisher.
+            </summary>
+            <value>
+            The type of the publisher.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.FirstRequestTimestamp">
+            <summary>
+            Gets or sets the first request timestamp.
+            </summary>
+            <value>
+            The first request timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.OperationEndTime">
+            <summary>
+            Gets or sets the operation end time.
+            </summary>
+            <value>
+            The operation end time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.IsCompleted">
+            <summary>
+            Gets or sets a value indicating whether this operation is completed.
+            </summary>
+            <value>
+              <c>true</c> if this operation is completed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.OneTimeKeyPadPosition">
+            <summary>
+            Gets or sets the one time key pad position.
+            </summary>
+            <value>
+            The one time key pad position.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.CompletionStatus">
+            <summary>
+            Gets or sets the completion status.
+            </summary>
+            <value>
+            The completion status.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.StateMachine">
+            <summary>
+            Gets or sets the state machine.
+            </summary>
+            <value>
+            The state machine.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.CloneIndex">
+            <summary>
+            Gets or sets the index of the clone.
+            </summary>
+            <value>
+            The index of the clone.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.FlowId">
+            <summary>
+            Gets or sets the flow identifier.
+            </summary>
+            <value>
+            The flow identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.DueDate">
+            <summary>
+            Gets or sets the due date.
+            </summary>
+            <value>
+            The due date.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase"/> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageMachineState">
+            <summary>
+            This class contains the data of a single state of a device message state machine.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageMachineState.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageMachineState.MessageId">
+            <summary>
+            Gets or sets the message identifier.
+            </summary>
+            <value>
+            The message identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageMachineState.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>
+            The message.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageMachineState.CommandId">
+            <summary>
+            Gets or sets the command identifier.
+            </summary>
+            <value>
+            The command identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageMachineState.CreateTimestamp">
+            <summary>
+            Gets or sets the create timestamp.
+            </summary>
+            <value>
+            The create timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageMachineState.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateMessage">
+            <summary>
+            This class contains the data of an update process that a device needs to execute.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateMessage.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateMessage.Update">
+            <summary>
+            Gets or sets the update.
+            </summary>
+            <value>
+            The update.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateMessage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateMessage" /> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateStatusMessage">
+            <summary>
+            This class contains the data of a update status retrival process that a device needs to execute.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceMessageBase" />
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateStatusMessage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateStatusMessage" /> class.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Devices.Messages.MessageTypes">
+            <summary>
+            This class contains the types of messages availalbe in the system.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.Messages.MessageTypes.Update">
+            <summary>
+            The message is of type <see cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateMessage"/>.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.Messages.MessageTypes.UpdateStatus">
+            <summary>
+            The message is of type <see cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceUpdateStatusMessage"/>.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Devices.Messages.MessageTypes.Lock">
+            <summary>
+            The message is of type <see cref="T:NanoLockSec.Core.Entities.Devices.Messages.DeviceLockMessage"/>.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Generic.EntityBase">
+            <summary>
+            Base class for entities in the system.
+            </summary>
+            <seealso cref="!:System.IEquatable&lt;NanoLockSec.Core.Entities.Generic.EntityBase&gt;" />
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.EntityBase.IsActive">
+            <summary>
+            Defines whether this entity is considered as "active"
+            </summary>     
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Generic.IJoinEntity`1">
+            <summary>
+            This interface describes a join between two entities.
+            </summary>
+            <typeparam name="T">The type of entity that the implementing entity is joined with.</typeparam>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.IJoinEntity`1.Navigation">
+            <summary>
+            Gets or sets the joined entity.
+            </summary>
+            <value>
+            The joined entity.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3">
+            <summary>
+            This class contains a collection of joined entities and their owner.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <typeparam name="TOtherEntity">The type of the other entity.</typeparam>
+            <typeparam name="TJoinEntity">The type of the join entity.</typeparam>
+            <seealso cref="T:System.Collections.Generic.ICollection`1" />
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.#ctor(`1,System.Collections.Generic.ICollection{`2})">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3"/> class.
+            </summary>
+            <param name="ownerEntity">The owner entity.</param>
+            <param name="collection">The collection.</param>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            An enumerator that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerator"></see> object that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.Add(`0)">
+            <summary>
+            Adds an item to the <see cref="T:System.Collections.Generic.ICollection`1"></see>.
+            </summary>
+            <param name="item">The object to add to the <see cref="T:System.Collections.Generic.ICollection`1"></see>.</param>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.Clear">
+            <summary>
+            Removes all items from the <see cref="T:System.Collections.Generic.ICollection`1"></see>.
+            </summary>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.Contains(`0)">
+            <summary>
+            Determines whether the <see cref="T:System.Collections.Generic.ICollection`1"></see> contains a specific value.
+            </summary>
+            <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.ICollection`1"></see>.</param>
+            <returns>
+            true if <paramref name="item">item</paramref> is found in the <see cref="T:System.Collections.Generic.ICollection`1"></see>; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1"></see> to an <see cref="T:System.Array"></see>, starting at a particular <see cref="T:System.Array"></see> index.
+            </summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array"></see> that is the destination of the elements copied from <see cref="T:System.Collections.Generic.ICollection`1"></see>. The <see cref="T:System.Array"></see> must have zero-based indexing.</param>
+            <param name="arrayIndex">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.Remove(`0)">
+            <summary>
+            Removes the first occurrence of a specific object from the <see cref="T:System.Collections.Generic.ICollection`1"></see>.
+            </summary>
+            <param name="item">The object to remove from the <see cref="T:System.Collections.Generic.ICollection`1"></see>.</param>
+            <returns>
+            true if <paramref name="item">item</paramref> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1"></see>; otherwise, false. This method also returns false if <paramref name="item">item</paramref> is not found in the original <see cref="T:System.Collections.Generic.ICollection`1"></see>.
+            </returns>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.Count">
+            <summary>
+            Gets the number of elements contained in the <see cref="T:System.Collections.Generic.ICollection`1"></see>.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.JoinCollectionFacade`3.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1"></see> is read-only.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Generic.LookupBase`1">
+            <summary>
+            This class is a base class for lookup entities.
+            </summary>
+            <typeparam name="T">The type of the identifier.</typeparam>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.LookupBase`1.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.LookupBase`1.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Generic.TrackableBase">
+            <summary>
+            Base class for all trackable entities in the system
+            </summary>
+            <seealso cref="!:System.IEquatable&lt;NanoLockSec.Core.Entities.Generic.TrackableBase&gt;" />
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.TrackableBase.Id">
+            <summary>
+            The id of the entity
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.TrackableBase.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Generic.TrackableBase.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.TrackableBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NanoLockSec.Core.Entities.Generic.EntityBase" /> class.
+            </summary>
+        </member>
+        <member name="M:NanoLockSec.Core.Entities.Generic.TrackableBase.Equals(NanoLockSec.Core.Entities.Generic.TrackableBase)">
+            <summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="other">An object to compare with this object.</param>
+            <returns>
+            true if the current object is equal to the <paramref name="other">other</paramref> parameter; otherwise, false.
+            </returns>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.ITrackable">
+            <summary>
+            This interface describes the functionality of a trackable entity.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.ITrackable.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.ITrackable.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.ITrackable.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Models.ModelLocationLog">
+            <summary>
+            This class contains the location of a model at a certain time.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.EntityBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Models.ModelLocationLog.ModelId">
+            <summary>
+            Gets or sets the model identifier.
+            </summary>
+            <value>
+            The model identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Models.ModelLocationLog.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Models.ModelLocationLog.LocationId">
+            <summary>
+            Gets or sets the location identifier.
+            </summary>
+            <value>
+            The location identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Models.ModelLocationLog.Location">
+            <summary>
+            Gets or sets the location.
+            </summary>
+            <value>
+            The location.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Models.ModelSerialLog">
+            <summary>
+            This class contains the serial of a model at a certain time.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.EntityBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Models.ModelSerialLog.ModelSerial">
+            <summary>
+            Gets or sets the model serial.
+            </summary>
+            <value>
+            The model serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Models.ModelSerialLog.ModelId">
+            <summary>
+            Gets or sets the model identifier.
+            </summary>
+            <value>
+            The model identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Models.ModelSerialLog.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics">
+            <summary>
+            This class contains the statistical data of a chip update.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.Update">
+            <summary>
+            Gets or sets the update.
+            </summary>
+            <value>
+            The update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.UpdateStateId">
+            <summary>
+            Gets or sets the state of the update.
+            </summary>
+            <value>
+            The state of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.UpdateState">
+            <summary>
+            Gets or sets the state of the update.
+            </summary>
+            <value>
+            The state of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.StartTime">
+            <summary>
+            Gets or sets the start time.
+            </summary>
+            <value>
+            The start time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.EndTime">
+            <summary>
+            Gets or sets the end time.
+            </summary>
+            <value>
+            The end time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.ChipUpdateStatistics.FlowId">
+            <summary>
+            Gets or sets the flow identifier.
+            </summary>
+            <value>
+            The flow identifier.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Updates.UpdateConfiguration">
+            <summary>
+            This class contains the configuration of an update.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.UpdateName">
+            <summary>
+            Gets or sets the name of the update.
+            </summary>
+            <value>
+            The name of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.UpdateVersion">
+            <summary>
+            Gets or sets the update version.
+            </summary>
+            <value>
+            The update version.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.FirmwareLocation">
+            <summary>
+            Gets or sets the firmware location.
+            </summary>
+            <value>
+            The firmware location.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether this update is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this update is enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.DeviceTypeId">
+            <summary>
+            Gets or sets the name of the device type.
+            </summary>
+            <value>
+            The name of the device type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.DeviceType">
+            <summary>
+            Gets or sets the name of the device type.
+            </summary>
+            <value>
+            The name of the device type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.IdAtDevice">
+            <summary>
+            Gets or sets the identifier at the device.
+            </summary>
+            <value>
+            The identifier at the device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.ImageSignature">
+            <summary>
+            Gets or sets the image signature.
+            </summary>
+            <value>
+            The image signature.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateConfiguration.ImageSize">
+            <summary>
+            Gets or sets the size of the image.
+            </summary>
+            <value>
+            The size of the image.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Updates.UpdateSequence">
+            <summary>
+            This class is a helper class to get an indentity integer via ElasticSearch.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateSequence.Dummy">
+            <summary>
+            Gets or sets the dummy data.
+            </summary>
+            <value>
+            The dummy.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Updates.UpdateState">
+            <summary>
+            This class represents a update state entity.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Generic.LookupBase`1" />
+            <seealso cref="T:NanoLockSec.Core.Entities.Updates.UpdateStateCode"/>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Updates.UpdateStateCode">
+            <summary>
+            This enumeration defines the possible states of an update.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Updates.UpdateStateCode.Undefined">
+            <summary>
+            The state is undefined.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Updates.UpdateStateCode.WaitingForUpdate">
+            <summary>
+            The update was not applied yet.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Updates.UpdateStateCode.Updated">
+            <summary>
+            The update was applied.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Updates.UpdateStateCode.UpdateInProgress">
+            <summary>
+            The update is being applied.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Updates.UpdateStateCode.UpdateNeeded">
+            <summary>
+            The update was not applied yet.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Updates.UpdateStateCode.SkippedUpdateDisabled">
+            <summary>
+            The update was skipped because the update was disabled.
+            </summary>
+        </member>
+        <member name="F:NanoLockSec.Core.Entities.Updates.UpdateStateCode.SkippedDeviceDeleted">
+            <summary>
+            The update was skipped because the device was disabled.
+            </summary>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Updates.UpdateStatistics">
+            <summary>
+            This class contains the statistical data of an update.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.Update">
+            <summary>
+            Gets or sets the update.
+            </summary>
+            <value>
+            The update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.StartTime">
+            <summary>
+            Gets or sets the start time.
+            </summary>
+            <value>
+            The start time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.EndTime">
+            <summary>
+            Gets or sets the end time.
+            </summary>
+            <value>
+            The end time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.ChipsToUpdate">
+            <summary>
+            Gets or sets the number of chips to update.
+            </summary>
+            <value>
+            The number of chips to update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.UpdatedChips">
+            <summary>
+            Gets or sets the number of updated chips.
+            </summary>
+            <value>
+            The number of updated chips.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Updates.UpdateStatistics.NumberOfErrors">
+            <summary>
+            Gets or sets the number of errors.
+            </summary>
+            <value>
+            The number of errors.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem">
+            <summary>
+            This class contains the data of an alert for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ViewItemBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.EventTypeId">
+            <summary>
+            Gets or sets the event type identifier.
+            </summary>
+            <value>
+            The event type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.EventTypeName">
+            <summary>
+            Gets or sets the name of the event type.
+            </summary>
+            <value>
+            The name of the event type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.AlertType">
+            <summary>
+            Gets or sets the type of the alert.
+            </summary>
+            <value>
+            The type of the alert.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.ChipSerial">
+            <summary>
+            Gets or sets the chip serial.
+            </summary>
+            <value>
+            The chip serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.DeviceId">
+            <summary>
+            Gets or sets the device identifier.
+            </summary>
+            <value>
+            The device identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.Device">
+            <summary>
+            Gets or sets the device.
+            </summary>
+            <value>
+            The device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.DeviceSerial">
+            <summary>
+            Gets or sets the device serial.
+            </summary>
+            <value>
+            The device serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.OpenedTimestamp">
+            <summary>
+            Gets or sets the opened timestamp.
+            </summary>
+            <value>
+            The opened timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.ClosedTimestamp">
+            <summary>
+            Gets or sets the closed timestamp.
+            </summary>
+            <value>
+            The closed timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.StatusId">
+            <summary>
+            Gets or sets the status.
+            </summary>
+            <value>
+            The status.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.StatusName">
+            <summary>
+            Gets or sets the name of the status.
+            </summary>
+            <value>
+            The name of the status.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.AlertStatus">
+            <summary>
+            Gets or sets the alert status.
+            </summary>
+            <value>
+            The alert status.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.CategoryId">
+            <summary>
+            Gets or sets the category.
+            </summary>
+            <value>
+            The category.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.CategoryName">
+            <summary>
+            Gets or sets the name of the category.
+            </summary>
+            <value>
+            The name of the category.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.AlertCategory">
+            <summary>
+            Gets or sets the alert category.
+            </summary>
+            <value>
+            The alert category.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.EndpointId">
+            <summary>
+            Gets or sets the end point identifier.
+            </summary>
+            <value>
+            The end point identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.EndpointSerial">
+            <summary>
+            Gets or sets the end point identifier.
+            </summary>
+            <value>
+            The end point identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.DeviceTypeName">
+            <summary>
+            Gets or sets the type of the device.
+            </summary>
+            <value>
+            The type of the device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.ModelName">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.ModelPath">
+            <summary>
+            Gets or sets the model path.
+            </summary>
+            <value>
+            The model path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AlertViewItem.IsChipActive">
+            <summary>
+            Gets or sets a value indicating whether the chip is active.
+            </summary>
+            <value>
+              <c>true</c> if the chip is active; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView">
+            <summary>
+            This class represents a record in the analytics_alerts view.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.AlertId">
+            <summary>
+            Gets or sets the alert identifier.
+            </summary>
+            <value>
+            The alert identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.AlertCategoryId">
+            <summary>
+            Gets or sets the alert category identifier.
+            </summary>
+            <value>
+            The alert category identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.AlertCategoryName">
+            <summary>
+            Gets or sets the name of the alert category.
+            </summary>
+            <value>
+            The name of the alert category.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.AlertStateId">
+            <summary>
+            Gets or sets the alert state identifier.
+            </summary>
+            <value>
+            The alert state identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.AlertStateName">
+            <summary>
+            Gets or sets the name of the alert state.
+            </summary>
+            <value>
+            The name of the alert state.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.AlertTypeId">
+            <summary>
+            Gets or sets the alert type identifier.
+            </summary>
+            <value>
+            The alert type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.AlertTypeName">
+            <summary>
+            Gets or sets the name of the alert type.
+            </summary>
+            <value>
+            The name of the alert type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ChipSerial">
+            <summary>
+            Gets or sets the chip serial.
+            </summary>
+            <value>
+            The chip serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ChipTypeId">
+            <summary>
+            Gets or sets the chip type identifier.
+            </summary>
+            <value>
+            The chip type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.IsChipActive">
+            <summary>
+            Gets or sets the is chip active.
+            </summary>
+            <value>
+            The is chip active.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.LastSync">
+            <summary>
+            Gets or sets the last synchronize.
+            </summary>
+            <value>
+            The last synchronize.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ChipName">
+            <summary>
+            Gets or sets the name of the chip.
+            </summary>
+            <value>
+            The name of the chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.CloseTimestamp">
+            <summary>
+            Gets or sets the close timestamp.
+            </summary>
+            <value>
+            The close timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.CountryId">
+            <summary>
+            Gets or sets the country identifier.
+            </summary>
+            <value>
+            The country identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.CountryName">
+            <summary>
+            Gets or sets the name of the country.
+            </summary>
+            <value>
+            The name of the country.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.CountryRegionId">
+            <summary>
+            Gets or sets the country region identifier.
+            </summary>
+            <value>
+            The country region identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.CountryRegionName">
+            <summary>
+            Gets or sets the name of the country region.
+            </summary>
+            <value>
+            The name of the country region.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.DeviceId">
+            <summary>
+            Gets or sets the device identifier.
+            </summary>
+            <value>
+            The device identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.DeviceSerial">
+            <summary>
+            Gets or sets the device serial.
+            </summary>
+            <value>
+            The device serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.DeviceName">
+            <summary>
+            Gets or sets the name of the device.
+            </summary>
+            <value>
+            The name of the device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.DeviceTypeId">
+            <summary>
+            Gets or sets the device type identifier.
+            </summary>
+            <value>
+            The device type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.IsDeviceActive">
+            <summary>
+            Gets or sets the is device active.
+            </summary>
+            <value>
+            The is device active.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.DeviceTypeName">
+            <summary>
+            Gets or sets the name of the device type.
+            </summary>
+            <value>
+            The name of the device type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.LocationId">
+            <summary>
+            Gets or sets the location identifier.
+            </summary>
+            <value>
+            The location identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.LocationName">
+            <summary>
+            Gets or sets the name of the location.
+            </summary>
+            <value>
+            The name of the location.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.LockStateId">
+            <summary>
+            Gets or sets the lock state identifier.
+            </summary>
+            <value>
+            The lock state identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.LockStateName">
+            <summary>
+            Gets or sets the name of the lock state.
+            </summary>
+            <value>
+            The name of the lock state.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelId">
+            <summary>
+            Gets or sets the model identifier.
+            </summary>
+            <value>
+            The model identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelSerial">
+            <summary>
+            Gets or sets the model serial.
+            </summary>
+            <value>
+            The model serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelName">
+            <summary>
+            Gets or sets the name of the model.
+            </summary>
+            <value>
+            The name of the model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelTypeId1">
+            <summary>
+            Gets or sets the model type id1.
+            </summary>
+            <value>
+            The model type id1.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelType1Name">
+            <summary>
+            Gets or sets the name of the first model type.
+            </summary>
+            <value>
+            The name of the first model type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelTypeId2">
+            <summary>
+            Gets or sets the second model type identifier.
+            </summary>
+            <value>
+            The  second model type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelType2Name">
+            <summary>
+            Gets or sets the name of the second model type.
+            </summary>
+            <value>
+            The name of the second model type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelTypeId3">
+            <summary>
+            Gets or sets the third model type identifier.
+            </summary>
+            <value>
+            The third model type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.ModelType3Name">
+            <summary>
+            Gets or sets the name of the third model type.
+            </summary>
+            <value>
+            The name of the third model type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.OpenedTimestamp">
+            <summary>
+            Gets or sets the opened timestamp.
+            </summary>
+            <value>
+            The opened timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.RegionId">
+            <summary>
+            Gets or sets the region identifier.
+            </summary>
+            <value>
+            The region identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.RegionName">
+            <summary>
+            Gets or sets the name of the region.
+            </summary>
+            <value>
+            The name of the region.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.UpdateVersion">
+            <summary>
+            Gets or sets the update version.
+            </summary>
+            <value>
+            The update version.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.FlowId">
+            <summary>
+            Gets or sets the flow identifier.
+            </summary>
+            <value>
+            The flow identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.UpdateStateId">
+            <summary>
+            Gets or sets the update state identifier.
+            </summary>
+            <value>
+            The update state identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Alerts.AnalyticsAlertView.UpdateStateName">
+            <summary>
+            Gets or sets the name of the update state.
+            </summary>
+            <value>
+            The name of the update state.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem">
+            <summary>
+            This class contains the data of a device transaction for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.Device">
+            <summary>
+            Gets or sets the device.
+            </summary>
+            <value>
+            The device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.Chip">
+            <summary>
+            Gets or sets the chip.
+            </summary>
+            <value>
+            The chip.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.DeviceType">
+            <summary>
+            Gets or sets the type of the device.
+            </summary>
+            <value>
+            The type of the device.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.TransactionTypeId">
+            <summary>
+            Gets or sets the transaction type identifier.
+            </summary>
+            <value>
+            The transaction type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.TransactionTypeName">
+            <summary>
+            Gets or sets the type of the transaction.
+            </summary>
+            <value>
+            The type of the transaction.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.CreatedBy">
+            <summary>
+            Gets or sets the name of the user who created the transaction.
+            </summary>
+            <value>
+            The name of the user who created the transaction.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.UpdatedBy">
+            <summary>
+            Gets or sets the name of the user who updated the transaction.
+            </summary>
+            <value>
+            The name of the user who updated the transaction.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipTransactionViewItem.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem">
+            <summary>
+            This class contains the the statistical data of a device for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.UpdateName">
+            <summary>
+            Gets or sets the name of the update.
+            </summary>
+            <value>
+            The name of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.UpdateVersion">
+            <summary>
+            Gets or sets the update version.
+            </summary>
+            <value>
+            The update version.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.LockStateId">
+            <summary>
+            Gets or sets the lock state identifier.
+            </summary>
+            <value>
+            The lock state identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.LockStateName">
+            <summary>
+            Gets or sets the name of the lock state.
+            </summary>
+            <value>
+            The name of the lock state.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.UpdateStateId">
+            <summary>
+            Gets or sets the update state identifier.
+            </summary>
+            <value>
+            The update state identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.UpdateStateName">
+            <summary>
+            Gets or sets the name of the update state.
+            </summary>
+            <value>
+            The name of the update state.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.LastSyncTimestamp">
+            <summary>
+            Gets or sets the last synchronize timestamp.
+            </summary>
+            <value>
+            The last synchronize timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.DeletionTimestamp">
+            <summary>
+            Gets or sets the deletion timestamp.
+            </summary>
+            <value>
+            The deletion timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.ChipViewItem.RegistrationTimestamp">
+            <summary>
+            Gets or sets the registration timestamp.
+            </summary>
+            <value>
+            The registration timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Devices.DeviceMemoryStateLogViewItem">
+            <summary>
+            This class contains the data of a device memory state at a certain time for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceMemoryStateLogViewItem.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceMemoryStateLogViewItem.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceMemoryStateLogViewItem.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceMemoryStateLogViewItem.LockStateId">
+            <summary>
+            Gets or sets the lock state of the device memory.
+            </summary>
+            <value>
+            The lock state of the device memory.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceMemoryStateLogViewItem.LockStateName">
+            <summary>
+            Gets or sets the name of the lock state.
+            </summary>
+            <value>
+            The name of the lock state.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Devices.DeviceSyncLogViewItem">
+            <summary>
+            This class contains the data of a device sync for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ITrackable" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceSyncLogViewItem.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceSyncLogViewItem.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceSyncLogViewItem.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem">
+            <summary>
+            This class contains the data of a device for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ViewItemBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.DeviceSerial">
+            <summary>
+            Gets or sets the device serial.
+            </summary>
+            <value>
+            The device serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.ChipSerial">
+            <summary>
+            Gets or sets the chip serial.
+            </summary>
+            <value>
+            The chip serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.DeviceId">
+            <summary>
+            Gets or sets the device identifier.
+            </summary>
+            <value>
+            The device identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.DeviceTypeId">
+            <summary>
+            Gets or sets the device type identifier.
+            </summary>
+            <value>
+            The device type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.DeviceTypeName">
+            <summary>
+            Gets or sets the name of the device type.
+            </summary>
+            <value>
+            The name of the device type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.EndpointSerial">
+            <summary>
+            Gets or sets the endpoint serial.
+            </summary>
+            <value>
+            The endpoint serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.EndpointId">
+            <summary>
+            Gets or sets the endpoint identifier.
+            </summary>
+            <value>
+            The endpoint identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.ModelName">
+            <summary>
+            Gets or sets the name of the model.
+            </summary>
+            <value>
+            The name of the model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.ModelPath">
+            <summary>
+            Gets or sets the model path.
+            </summary>
+            <value>
+            The model path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.LocationId">
+            <summary>
+            Gets or sets the location identifier.
+            </summary>
+            <value>
+            The location identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.LocationName">
+            <summary>
+            Gets or sets the name of the location.
+            </summary>
+            <value>
+            The name of the location.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.LocationPath">
+            <summary>
+            Gets or sets the location path.
+            </summary>
+            <value>
+            The location path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.UpdateName">
+            <summary>
+            Gets or sets the name of the update.
+            </summary>
+            <value>
+            The name of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.UpdateVersion">
+            <summary>
+            Gets or sets the update version.
+            </summary>
+            <value>
+            The update version.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.LockState">
+            <summary>
+            Gets or sets the state of the lock.
+            </summary>
+            <value>
+            The state of the lock.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.UpdateState">
+            <summary>
+            Gets or sets the state of the update.
+            </summary>
+            <value>
+            The state of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.LastSyncTimestamp">
+            <summary>
+            Gets or sets the last synchronize timestamp.
+            </summary>
+            <value>
+            The last synchronize timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.RegistrationTimestamp">
+            <summary>
+            Gets or sets the registration timestamp.
+            </summary>
+            <value>
+            The registration timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItem.DeletionTimestamp">
+            <summary>
+            Gets or sets the deletion timestamp.
+            </summary>
+            <value>
+            The deletion timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase">
+            <summary>
+            This class is a base class for device related view items.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.ChipSerial">
+            <summary>
+            Gets or sets the chip serial.
+            </summary>
+            <value>
+            The chip serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.DeviceId">
+            <summary>
+            Gets or sets the device identifier.
+            </summary>
+            <value>
+            The device identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.DeviceSerial">
+            <summary>
+            Gets or sets the device serial.
+            </summary>
+            <value>
+            The device serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.DeviceTypeId">
+            <summary>
+            Gets or sets the device type identifier.
+            </summary>
+            <value>
+            The device type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.DeviceTypeName">
+            <summary>
+            Gets or sets the name of the device type.
+            </summary>
+            <value>
+            The name of the device type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.ModelSerial">
+            <summary>
+            Gets or sets the model serial.
+            </summary>
+            <value>
+            The model serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.ModelId">
+            <summary>
+            Gets or sets the model identifier.
+            </summary>
+            <value>
+            The model identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.ModelName">
+            <summary>
+            Gets or sets the name of the model.
+            </summary>
+            <value>
+            The name of the model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.ModelPath">
+            <summary>
+            Gets or sets the model path.
+            </summary>
+            <value>
+            The model path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.LocationId">
+            <summary>
+            Gets or sets the location identifier.
+            </summary>
+            <value>
+            The location identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.LocationName">
+            <summary>
+            Gets or sets the name of the location.
+            </summary>
+            <value>
+            The name of the location.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.LocationPath">
+            <summary>
+            Gets or sets the location path.
+            </summary>
+            <value>
+            The location path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.IsDeviceActive">
+            <summary>
+            Gets or sets a value indicating whether this instance is device active.
+            </summary>
+            <value>
+              <c>true</c> if this instance is device active; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Devices.DeviceViewItemBase.IsChipActive">
+            <summary>
+            Gets or sets a value indicating whether this instance is device active.
+            </summary>
+            <value>
+              <c>true</c> if this instance is device active; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Locations.LocationViewItem">
+            <summary>
+            This class contains the data of a location for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ViewItemBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Locations.LocationViewItem.Name">
+            <summary>
+            Gets or sets the name of the location.
+            </summary>
+            <value>
+            The name of the location.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Locations.LocationViewItem.PropertyName">
+            <summary>
+            Gets or sets the name of the property.
+            </summary>
+            <value>
+            The name of the property.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Locations.LocationViewItem.LocationPath">
+            <summary>
+            Gets or sets the location path.
+            </summary>
+            <value>
+            The location path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Locations.LocationViewItem.LockedDevicesCount">
+            <summary>
+            Gets or sets the locked devices count.
+            </summary>
+            <value>
+            The locked devices count.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Locations.LocationViewItem.UpdatedDevicesCount">
+            <summary>
+            Gets or sets the updated devices count.
+            </summary>
+            <value>
+            The updated devices count.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Locations.LocationViewItem.LastSyncTimestamp">
+            <summary>
+            Gets or sets the last synchronize timestamp.
+            </summary>
+            <value>
+            The last synchronize timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Locations.LocationViewItem.DevicesCount">
+            <summary>
+            Gets or sets the devices count.
+            </summary>
+            <value>
+            The devices count.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Models.ModelViewItem">
+            <summary>
+            This class contains the data of a model for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ViewItemBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.ModelSerial">
+            <summary>
+            Serial of this model
+            </summary>
+            <value>
+            The model serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.ModelTypeId">
+            <summary>
+            Gets or sets the model type identifier.
+            </summary>
+            <value>
+            The model type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.ModelName">
+            <summary>
+            Gets or sets the name of the model.
+            </summary>
+            <value>
+            The name of the model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.ModelPath">
+            <summary>
+            Gets or sets the model path.
+            </summary>
+            <value>
+            The model path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.LocationId">
+            <summary>
+            Gets or sets the location identifier.
+            </summary>
+            <value>
+            The location identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.LocationName">
+            <summary>
+            Gets or sets the name of the location.
+            </summary>
+            <value>
+            The name of the location.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.LocationPath">
+            <summary>
+            Gets or sets the location path.
+            </summary>
+            <value>
+            The location path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.LockedDevicesCount">
+            <summary>
+            Gets or sets the locked devices count.
+            </summary>
+            <value>
+            The locked devices count.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.UpdatedDevicesCount">
+            <summary>
+            Gets or sets the updated devices count.
+            </summary>
+            <value>
+            The updated devices count.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.LastSyncTimestamp">
+            <summary>
+            Gets or sets the last synchronize timestamp.
+            </summary>
+            <value>
+            The last synchronize timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.DeletionTimestamp">
+            <summary>
+            Gets or sets the deletion timestamp.
+            </summary>
+            <value>
+            The deletion timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Models.ModelViewItem.DevicesCount">
+            <summary>
+            Gets or sets the devices count.
+            </summary>
+            <value>
+            The devices count.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem">
+            <summary>
+            This class contains the information of a chip update for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ViewItemBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.DeviceId">
+            <summary>
+            Gets or sets the device identifier.
+            </summary>
+            <value>
+            The device identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.DeviceSerial">
+            <summary>
+            Gets or sets the device serial.
+            </summary>
+            <value>
+            The device serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.DeviceTypeId">
+            <summary>
+            Gets or sets the device type identifier.
+            </summary>
+            <value>
+            The device type identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.DeviceTypeName">
+            <summary>
+            Gets or sets the name of the device type.
+            </summary>
+            <value>
+            The name of the device type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.ChipId">
+            <summary>
+            Gets or sets the chip identifier.
+            </summary>
+            <value>
+            The chip identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.ChipSerial">
+            <summary>
+            Gets or sets the chip serial.
+            </summary>
+            <value>
+            The chip serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.ModelId">
+            <summary>
+            Gets or sets the model identifier.
+            </summary>
+            <value>
+            The model identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.ModelSerial">
+            <summary>
+            Gets or sets the model serial.
+            </summary>
+            <value>
+            The model serial.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.ModelName">
+            <summary>
+            Gets or sets the name of the model.
+            </summary>
+            <value>
+            The name of the model.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.ModelPath">
+            <summary>
+            Gets or sets the model path.
+            </summary>
+            <value>
+            The model path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.LocationId">
+            <summary>
+            Gets or sets the location identifier.
+            </summary>
+            <value>
+            The location identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.LocationName">
+            <summary>
+            Gets or sets the name of the location.
+            </summary>
+            <value>
+            The name of the location.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.LocationPath">
+            <summary>
+            Gets or sets the location path.
+            </summary>
+            <value>
+            The location path.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.UpdateId">
+            <summary>
+            Gets or sets the update identifier.
+            </summary>
+            <value>
+            The update identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.UpdateName">
+            <summary>
+            Gets or sets the name of the update.
+            </summary>
+            <value>
+            The name of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.UpdateVersion">
+            <summary>
+            Gets or sets the update version.
+            </summary>
+            <value>
+            The update version.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.ApplicationState">
+            <summary>
+            Gets or sets the state of the application.
+            </summary>
+            <value>
+            The state of the application.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.UpdateStateId">
+            <summary>
+            Gets or sets the update state identifier.
+            </summary>
+            <value>
+            The update state identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.UpdateStateName">
+            <summary>
+            Gets or sets the name of the update state.
+            </summary>
+            <value>
+            The name of the update state.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.FlowId">
+            <summary>
+            Gets or sets the flow identifier.
+            </summary>
+            <value>
+            The flow identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.StartTime">
+            <summary>
+            Gets or sets the start time.
+            </summary>
+            <value>
+            The start time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.EndTime">
+            <summary>
+            Gets or sets the end time.
+            </summary>
+            <value>
+            The end time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.CreateTimestamp">
+            <summary>
+            Gets or sets the creation timestamp.
+            </summary>
+            <value>
+            The creation timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.ChipUpdateViewItem.UpdateTimestamp">
+            <summary>
+            Gets or sets the update timestamp.
+            </summary>
+            <value>
+            The update timestamp.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem">
+            <summary>
+            This class contains the data of an update for display purposes.
+            </summary>
+            <seealso cref="T:NanoLockSec.Core.Entities.ViewItemBase" />
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.IsStarred">
+            <summary>
+            Gets or sets a value indicating whether this update is starred.
+            </summary>
+            <value>
+              <c>true</c> if this update is starred; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.UpdateName">
+            <summary>
+            Gets or sets the name of the update.
+            </summary>
+            <value>
+            The name of the update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.UpdateVersion">
+            <summary>
+            Gets or sets the update version.
+            </summary>
+            <value>
+            The update version.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.CreateTimestamp">
+            <summary>
+            Gets or sets the create timestamp.
+            </summary>
+            <value>
+            The create timestamp.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.StartTime">
+            <summary>
+            Gets or sets the start time.
+            </summary>
+            <value>
+            The start time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.EndTime">
+            <summary>
+            Gets or sets the end time.
+            </summary>
+            <value>
+            The end time.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.ChipsToUpdate">
+            <summary>
+            Gets or sets the number of chips to update.
+            </summary>
+            <value>
+            The number of chips to update.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.CoveragePercentage">
+            <summary>
+            Gets or sets the coverage percentage.
+            </summary>
+            <value>
+            The coverage percentage.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.NumberOfErrors">
+            <summary>
+            Gets or sets the number of errors.
+            </summary>
+            <value>
+            The number of errors.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.Activity">
+            <summary>
+            Gets or sets the activity.
+            </summary>
+            <value>
+            The activity.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether this update is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this update is enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.DeviceTypeName">
+            <summary>
+            Gets or sets the name of the device type.
+            </summary>
+            <value>
+            The name of the device type.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.Views.Updates.UpdateViewItem.DeviceTypeId">
+            <summary>
+            Gets or sets the device type identifier.
+            </summary>
+            <value>
+            The device type identifier.
+            </value>
+        </member>
+        <member name="T:NanoLockSec.Core.Entities.ViewItemBase">
+            <summary>
+            This class is a base class for view items.
+            </summary>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.ViewItemBase.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:NanoLockSec.Core.Entities.ViewItemBase.IsActive">
+            <summary>
+            Gets or sets a value indicating whether this instance is active.
+            </summary>
+            <value>
+              <c>true</c> if this instance is active; otherwise, <c>false</c>.
+            </value>
+        </member>
+    </members>
+</doc>
